@@ -46,8 +46,8 @@ public class CustomAdapter extends BaseAdapter {
 
         try {
             JSONObject jsonObject = jsonArray.getJSONObject(position);
-            site.setText(jsonObject.getString("site"));
-            url.setText(jsonObject.getString("url"));
+            site.setText(jsonObject.getString("name"));
+            url.setText(jsonObject.getString("email"));
         } catch (JSONException e) {
             e.printStackTrace();
         }
